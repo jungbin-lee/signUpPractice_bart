@@ -9,17 +9,17 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val idInputcontent = idInput.text.toString()
-        val password =passwordInput.text.toString()
+
         signUpBtn.setOnClickListener {
-            if (idInputcontent == "admin@test.com") {
-                if (password == "qwer") {
-                    Toast.makeText(this, "관리자입니다.", Toast.LENGTH_SHORT).show()
-                } else {
+            val idInputcontent = idInput.text.toString()
+            val password =passwordInput.text.toString()
+            if (idInputcontent == "admin@test.com"&& password == "qwer") {
+
+                Toast.makeText(this, "관리자입니다.", Toast.LENGTH_SHORT).show()
+            }else {
+
                     Toast.makeText(this, "로그인실패.", Toast.LENGTH_SHORT).show()
                 }
-                Toast.makeText(this, "로그인실패.", Toast.LENGTH_SHORT).show()
-            }
         }
     }
 }
