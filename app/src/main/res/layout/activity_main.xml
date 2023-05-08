@@ -31,6 +31,7 @@
 android:layout_marginTop="15dp"
         tools:ignore="HardcodedText"/>
     <EditText
+            android:id="@+id/idInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="이메일 양식으로 입력"
@@ -38,6 +39,7 @@ android:layout_marginTop="15dp"
           android:inputType="textEmailAddress"
        />
     <TextView
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="password"
@@ -45,56 +47,57 @@ android:layout_marginTop="15dp"
 
             tools:ignore="HardcodedText"/>
     <EditText
+            android:id="@+id/passwordInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="8 글자이상 입력"
             android:layout_marginTop="15dp"
             android:inputType="textPassword"
     />
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="nickName"
+<!--    <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="nickName"-->
 
-            tools:ignore="HardcodedText"/>
-    <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="닉네임은 한줄로입력"
-            android:singleLine="true"
-            android:imeOptions="actionGo"
+<!--            tools:ignore="HardcodedText"/>-->
+<!--    <EditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="닉네임은 한줄로입력"-->
+<!--            android:singleLine="true"-->
+<!--            android:imeOptions="actionGo"-->
 
 
 
-    />
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="15dp"
-    >
-        <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="남성"/>
-    <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="여성"/>
-        <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="공개안함"/>
-    </RadioGroup>
+<!--    />-->
+<!--    <RadioGroup-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--    >-->
+<!--        <RadioButton-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="남성"/>-->
+<!--    <RadioButton-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="여성"/>-->
+<!--        <RadioButton-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="공개안함"/>-->
+<!--    </RadioGroup>-->
 
-    <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="이용약관 동의"
-            android:layout_marginTop="15dp"
+<!--    <CheckBox-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="이용약관 동의"-->
+<!--            android:layout_marginTop="15dp"-->
 
-            android:checked="false"
-    />
+<!--            android:checked="false"-->
+<!--    />-->
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="0dp"
@@ -104,6 +107,7 @@ android:layout_marginTop="15dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
         <Button
+                android:id="@+id/cancleBtn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
@@ -111,6 +115,7 @@ android:layout_marginTop="15dp"
                 android:text="취소"/>
 
         <Button
+                android:id="@+id/signUpBtn"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
